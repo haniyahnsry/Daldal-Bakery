@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Daldal Bakery</title>
+
+    <!-------- Favicon -------->
+    <link rel="shortcut icon" href="./dals.png" type="image/svg+xml">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="css/img/cheesecake.png">
+        <nav class="nav-bar">
+            <ul>
+                <li><a class="text" id="home-title" href="#home">Home</a></li>
+                <li><a class="text" id="about-title" href="#about">About</a></li>
+                <li><a class="text" id="store-title" href="#store">Store</a></li>
+            </ul>
+        </nav>
+        <div class="holder">
+            <p class="number">&#9742; 0823 9181 0731</p>
+            <div class="cart-buttons">
+                <button class="cart" id="cart">0 Items</button>
+                <button class="clear" id="clear">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <a id="home"><div class="home"></a>
+        <img src="css/img/bg.jpeg">
+        <h1 class="welcome">Welcome to <span class="name">daldal!</span></h1>
+        <button class="explore"><a href="#store" id="explore">Explore</a></button>
+    </div>
+
+    <a id="about"><div class="about-us"></a>
+        <div class="about-us-container">
+            <h1>About <span class="us">daldal</span></h1>
+            <p>Daldal Bakery was born from our love of cakes and a desire to share happiness through sweet indulgence. Every cake we bake is a testament to our dedication and passion. We look forward to welcoming you and making your day a little sweeter.</p>
+            <button class="about-us-explore"><a href="#store" id="about-us-explore">Explore</a></button>
+        </div>
+        <img src="css/img/aboutdal.jpeg">
+    </div>
+
+    <a id="store"><div class="main"></a>
+        <div class="title-container">
+            <h1 class="our-store">daldal 's <span class="store">Store</span></h1>
+        </div>
+        <div class="button-holder">
+            <button class="filter-button" id="all">All</button>
+            <button class="filter-button" id="cake-button">Cakes</button>
+            <button class="filter-button" id="cupcake-button">Gelato</button>
+            <button class="filter-button" id="sweet-button">Sweets</button>
+            <button class="filter-button" id="doughnut-button">Breads</button>
+        </div>
+
+        <div class="search-bar-container">
+            <p class="search-icon">&#x1F50D</p>
+            <input type="text" placeholder="Item..." value="" class="search-bar" id="search-bar" onkeyup="textBarSearch()">
+        </div>
+
+        <div class="confec-holder">
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="css/img/birthcake.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Mousse Cake</p>
+                    <p class="confec-price">Rp. <span class="price">150.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="css/img/pear.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Gelato Pear</p>
+                    <p class="confec-price">Rp. <span class="price">70.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="css/img/blueberry.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Blueberry Cake</p>
+                    <p class="confec-price">Rp. <span class="price">140.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="css/img/croissant.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Croissant</p>
+                    <p class="confec-price">Rp. <span class="price">40.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="css/img/chocolate.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Chocolate</p>
+                    <p class="confec-price">Rp. <span class="price">80.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="css/img/gelatostraw.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Gelato Strawberry </p>
+                    <p class="confec-price"> Rp. <span class="price">80.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="css/img/cromboloni.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Cromboloni</p>
+                    <p class="confec-price">Rp. <span class="price">40.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="css/img/strawcake.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Strawberry Cake</p>
+                    <p class="confec-price">Rp. <span class="price">150.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="css/img/galette.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Galette Bressane </p>
+                    <p class="confec-price"> Rp. <span class="price">60.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="css/img/rollcake.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Rollcake</p>
+                    <p class="confec-price">Rp. <span class="price">60.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="css/img/peach.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Gelato Peach</p>
+                    <p class="confec-price">Rp.<span class="price">75.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="css/img/pumpkin.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Pumpkin Cake</p>
+                    <p class="confec-price">Rp. <span class="price">200.000</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Created by Haniyah &#169</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
